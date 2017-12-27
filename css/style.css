@@ -16,14 +16,15 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
+
 /*universal styles*/
 
 html {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	box-sizing: border-box;
 	color: #4a4a49;
 }
+
 
 /*header styling*/
 
@@ -31,7 +32,7 @@ header {
 	position: fixed;
 	height: 4rem;
 	width: 100%;
-	z-index: 5;
+	z-index: 10;
 	background-color: #fff;
 }
 
@@ -88,14 +89,14 @@ header nav a {
 	display: flex;
 }
 
-.graphic {
+#banner-graphic {
 	width: 60%;
 	height: auto;
 	overflow: hidden;
 	margin: 2rem 1.5rem;
 }
 
-.graphic img {
+#banner-graphic img {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -128,7 +129,7 @@ header nav a {
 
 #banner-btn {
 	width: 80%;
-	background-color: #4a4a49;
+	background-color: rgb(74, 74, 73);
 	color: white;
 	padding: 1rem 0;
 	text-align: center;
@@ -136,10 +137,211 @@ header nav a {
 	text-decoration: none;
 }
 
+#banner-btn:hover {
+	background-color: rgba(74, 74, 73, 0.5);
+	color: #000;
+	transition: all 0.2s ease-in;
+}
 
+/*information section styling*/
+
+.graphic-list {
+	display: flex;
+}
+
+.graphic-content {
+	width: 60%;
+	margin: 2rem 1.5rem;
+}
+
+.graphic {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.graphic img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.graphic-text {
+	width: 80%;
+	margin-bottom: 2rem;
+}
+
+.graphic-text h2 {
+ font-size: 2.5rem;
+ font-weight: bold;
+ margin-top: 2rem;
+ margin-bottom: 1.5rem;
+}
+
+#attribution {
+	font-weight: bold;
+	margin-top: 2rem;
+}
+
+.list {
+	width: 40%;
+	border: 1px solid #cbcbcb;
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.list-item:first-child {
+	padding-top: 1rem;
+}
+
+.list-item:last-child {
+	background-color: #cbcbcb;
+}
+
+.list-item {
+ display: flex;
+ align-items: center;
+ margin-left: -1px;
+ border-bottom: 1px solid #cbcbcb;
+}
+
+.list-image {
+	width: 35%;
+	height: auto;
+	overflow: hidden;
+	padding: 1rem;
+}
+
+.list-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.list-text {
+	width: 65%;
+}
+
+.list-text h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.list-text p {
+	margin: 0.5rem 0;
+	line-height: 1.5rem;
+}
+
+.list-link {
+	text-decoration: none;
+	color: #2D8CEB;
+}
+
+#course {
+	background-color: #cbcbcb;
+}
+
+.section-title {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+
+#course-grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	padding-bottom: 1rem;
+}
+
+.course-item {
+	width: 25%;
+	background-color: #fff;
+	margin: 1rem;
+}
+
+.course-image {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.course-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.course-description {
+	padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-description h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.course-description h4 {
+	text-transform: uppercase;
+	margin: 0.5rem 0;
+}
+
+.course-description p {
+	line-height: 1.5rem;
+	width: 75%;
+}
+
+
+/*thesis section styling*/
+
+#thesis .list {
+	border: none;
+}
+
+#thesis .graphic-text h2 {
+	font-size: 1.5rem;
+}
+
+#thesis .list-item {
+	border: none;
+}
+
+#thesis .list-item:first-child {
+	margin-top: 2rem;
+	padding-top: 0;
+	background-color: #cbcbcb;
+}
+
+#thesis .list-item:last-child {
+	background-color: inherit;
+}
 
 .graphic video {
 	display: block;
+	position: relative;
 	max-width: 100%;
 	height: auto;
+}
+
+
+/*footer styling*/
+
+footer {
+	border-top: 1px solid #cbcbcb;
+	display: flex;
+	padding: 1rem 1.5rem 0 1.5rem;
+	justify-content: space-between;
+	height: 5rem;
+}
+
+footer nav a {
+	text-decoration: none;
+	color: #4a4a49;
+}
+
+footer nav a:first-child {
+	margin-right: 1rem;
 }

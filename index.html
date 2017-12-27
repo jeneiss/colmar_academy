@@ -30,7 +30,7 @@
 
 	<!-- banner -->
 	<section id="banner">
-		<div class="graphic">
+		<div id="banner-graphic">
 			<img src="images/banner.jpg">
 		</div>
 		<div id="banner-content">
@@ -43,42 +43,54 @@
 	</section>
 
 	<!-- information section content -->
-	<section id="information" class="graphic-list">
+	<section class="graphic-list">
 		<div class="graphic-content">
 			<div class="graphic">
 				<img src="images/information-main.jpg">
 			</div>
 			<div class="graphic-text">
 				<h2>It doesn't hurt to keep practicing</h2>
-				<p>"Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus."</p>
+				<p>"Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus."</p>
 				<p id="attribution">Emanuel, Sr Strategist at Hiring.com</p>
 			</div>
 		</div>
 		<div class="list">
 			<div class="list-item">
-				<img src="images/information-orientation.jpg">
-				<h3>Orientation Date</h3>
-				<p>Tue 10/11 &amp; Wed 10/12: 8am&ndash;3pm</p>
-				<a href="#" class="list-link">Read more</a>
+				<div class="list-image">
+					<img src="images/information-orientation.jpg">
+				</div>
+				<div class="list-text">
+					<h3>Orientation Date</h3>
+					<p>Tue 10/11 &amp; Wed 10/12: 8am&ndash;3pm</p>
+					<a href="#" class="list-link">Read more</a>
+				</div>
 			</div>
 			<div class="list-item">
-				<img src="images/information-campus.jpg">
-				<h3>Our campus</h3>
-				<p>Find which campus is close by you</p>
-				<a href="#" class="list-link">Read more</a>
+				<div class="list-image">
+					<img src="images/information-campus.jpg">
+				</div>
+				<div class="list-text">
+					<h3>Our campus</h3>
+					<p>Find which campus is close by you</p>
+					<a href="#" class="list-link">Read more</a>
+				</div>
 			</div>
 			<div class="list-item">
-				<img src="images/information-guest-lecture.jpg">
-				<h3>Our guest lecture</h3>
-				<p>Join a keynote with Oliver Sack about music in medical treatment</p>
-				<a href="#" class="list-link">Read more</a>
+				<div class="list-image">
+					<img src="images/information-guest-lecture.jpg">
+				</div>
+				<div class="list-text">
+					<h3>Our guest lecture</h3>
+					<p>Join a keynote with Oliver Sack about music in medical treatment</p>
+					<a href="#" class="list-link">Read more</a>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- course section content -->
-	<section id ="course">
-		<h2>Start learning</h2>
+	<section id="course">
+		<h2 class="section-title">Start learning</h2>
 		<div id="course-grid">
 			<div class="course-item">
 				<div class="course-image">
@@ -86,7 +98,7 @@
 				</div>
 				<div class="course-description">
 					<h3>Software engineering</h3>
-					<p>Courses</p>
+					<h4>Courses</h4>
 					<p>Web developement, Mobile Development, iOT, APIs</p>
 				</div>
 			</div>
@@ -96,7 +108,7 @@
 				</div>
 				<div class="course-description">
 					<h3>Computer art</h3>
-					<p>Courses</p>
+					<h4>Courses</h4>
 					<p>Image &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
 				</div>
 			</div>
@@ -106,7 +118,7 @@
 				</div>
 				<div class="course-description">
 					<h3>Design</h3>
-					<p>Courses</p>
+					<h4>Courses</h4>
 					<p>User Experience Design, User Research, Visual Design</p>
 				</div>
 			</div>
@@ -116,7 +128,7 @@
 				</div>
 				<div class="course-description">
 					<h3>Data</h3>
-					<p>Courses</p>
+					<h4>Courses</h4>
 					<p>Data Science, Big Data, SQL, Data Visualization</p>
 				</div>
 			</div>
@@ -126,7 +138,7 @@
 				</div>
 				<div class="course-description">
 					<h3>Business</h3>
-					<p>Courses</p>
+					<h4>Courses</h4>
 					<p>Product Development, Business Development, Startup</p>
 				</div>
 			</div>
@@ -136,7 +148,7 @@
 				</div>
 				<div class="course-description">
 					<h3>Marketing</h3>
-					<p>Courses</p>
+					<h4>Courses</h4>
 					<p>Analytics, Content Marketing, Mobile Marketing</p>
 				</div>
 			</div>
@@ -144,27 +156,37 @@
 	</section>
 
 	<!-- thesis section content -->
-	<section id="thesis" class="graphic-list">
-		<h2>Thesis exhibit</h2>
-		<div class="graphic-content">
-			<div class="graphic">
-				<video src="video/thesis.mp4">Sorry, your browser doesn't support embedded videos.</video>
+	<section id="thesis">
+		<h2 class="section-title">Thesis exhibit</h2>
+			<div class="graphic-list">
+			<div class="graphic-content">
+				<div class="graphic">
+					<video preload="none" controls="controls" poster="video/video-poster.jpg" onclick="this.paused ? this.play() : this.pause();"> <source src="video/thesis.mp4">Sorry, your browser doesn't support embedded videos.></video>
+				</div>
+				<div class="graphic-text">
+					<h2>Reimagine urban</h2>
+					<p>"Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus."</p>
+				</div>
 			</div>
-			<div class="graphic-text">
-				<h2>Reimagine urban</h2>
-				<p>"Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus."</p>
-			</div>
-		</div>
-		<div class="list">
-			<div class="list-item">
-				<img src="images/thesis-fisma.jpg">
-				<h3>Fisma: Design and Prototype</h3>
-				<p>Designer showcase of new prototype product</p>
-			</div>
-			<div class="list-item">
-				<img src="images/thesis-now-and-then.jpg">
-				<h3>Now and then</h3>
-				<p>Research study about New York</p>
+			<div class="list">
+				<div class="list-item">
+					<div class="list-image">
+						<img src="images/thesis-fisma.jpg">
+					</div>
+					<div class="list-text">
+						<h3>Fisma: Design and Prototype</h3>
+						<p>Designer showcase of new prototype product</p>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-image">
+						<img src="images/thesis-now-and-then.jpg">
+					</div>
+					<div class="list-text">
+						<h3>Now and then</h3>
+						<p>Research study about New York</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
