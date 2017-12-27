@@ -1,0 +1,145 @@
+/*fonts*/
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/*universal styles*/
+
+html {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+	color: #4a4a49;
+}
+
+/*header styling*/
+
+header {
+	position: fixed;
+	height: 4rem;
+	width: 100%;
+	z-index: 5;
+	background-color: #fff;
+}
+
+#header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+	padding-left: 1.5rem;
+}
+
+#logo-text {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+#logo-img img {
+	height: 3rem;
+}
+
+#logo-text p {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+#logo-text span {
+	font-weight: normal;
+	color: #969393;
+}
+
+header nav {
+	margin-right: 1rem;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #4a4a49;
+	padding-right: 1rem;
+}
+
+
+
+/*banner section styling*/
+
+#banner {
+	padding-top: 4rem; /*to compensate for fixed header*/
+	background-color: #cbcbcb;
+	display: flex;
+}
+
+.graphic {
+	width: 60%;
+	height: auto;
+	overflow: hidden;
+	margin: 2rem 1.5rem;
+}
+
+.graphic img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+#banner-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30%;
+}
+
+#banner-text {
+	width: 90%;
+}
+
+#banner-text h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	line-height: 3.5rem;
+	font-weight: bold;
+}
+
+#banner-text p {
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 2rem;
+	margin-bottom: 2rem;
+}
+
+#banner-btn {
+	width: 80%;
+	background-color: #4a4a49;
+	color: white;
+	padding: 1rem 0;
+	text-align: center;
+	font-size: 1.25rem;
+	text-decoration: none;
+}
+
+
+
+.graphic video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
