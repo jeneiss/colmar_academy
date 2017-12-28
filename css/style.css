@@ -16,15 +16,37 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v14/tI4j516nok_GrVf4dhunkg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 
 /*universal styles*/
 
 html {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	color: #4a4a49;
+	color: #616161;
 }
 
+h1,
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	color: #212121;
+}
 
 /*header styling*/
 
@@ -62,11 +84,12 @@ header {
 #logo-text p {
 	font-size: 2rem;
 	font-weight: bold;
+	color: #000;
 }
 
 #logo-text span {
 	font-weight: normal;
-	color: #969393;
+	color: #388E3C;
 }
 
 header nav {
@@ -75,17 +98,20 @@ header nav {
 
 header nav a {
 	text-decoration: none;
-	color: #4a4a49;
+	color: #616161;
 	padding-right: 1rem;
 }
 
+header nav a:hover {
+	color: #388E3C;
+}
 
 
 /*banner section styling*/
 
 #banner {
 	padding-top: 4rem; /*to compensate for fixed header*/
-	background-color: #cbcbcb;
+	background-color: #e0e0e0;
 	display: flex;
 }
 
@@ -117,7 +143,6 @@ header nav a {
 	font-size: 3rem;
 	margin-bottom: 1rem;
 	line-height: 3.5rem;
-	font-weight: bold;
 }
 
 #banner-text p {
@@ -129,8 +154,8 @@ header nav a {
 
 #banner-btn {
 	width: 80%;
-	background-color: rgb(74, 74, 73);
-	color: white;
+	background-color: rgb(56,142,60);
+	color: #fff;
 	padding: 1rem 0;
 	text-align: center;
 	font-size: 1.25rem;
@@ -138,7 +163,7 @@ header nav a {
 }
 
 #banner-btn:hover {
-	background-color: rgba(74, 74, 73, 0.5);
+	background-color: rgb(76,175,80);
 	color: #000;
 	transition: all 0.2s ease-in;
 }
@@ -173,7 +198,6 @@ header nav a {
 
 .graphic-text h2 {
  font-size: 2.5rem;
- font-weight: bold;
  margin-top: 2rem;
  margin-bottom: 1.5rem;
 }
@@ -185,7 +209,7 @@ header nav a {
 
 .list {
 	width: 40%;
-	border: 1px solid #cbcbcb;
+	border: 1px solid #e0e0e0;
 	margin-top: -1px;
 	margin-bottom: -1px;
 }
@@ -195,14 +219,14 @@ header nav a {
 }
 
 .list-item:last-child {
-	background-color: #cbcbcb;
+	background-color: #e0e0e0;
 }
 
 .list-item {
  display: flex;
  align-items: center;
  margin-left: -1px;
- border-bottom: 1px solid #cbcbcb;
+ border-bottom: 1px solid #e0e0e0;
 }
 
 .list-image {
@@ -234,16 +258,20 @@ header nav a {
 
 .list-link {
 	text-decoration: none;
-	color: #2D8CEB;
+	color: #388E3C;
+	font-weight: bold;
+}
+
+.list-link:hover {
+	color: #4CAF50;
 }
 
 #course {
-	background-color: #cbcbcb;
+	background-color: #e0e0e0;
 }
 
 .section-title {
 	font-size: 2.5rem;
-	font-weight: bold;
 	text-align: center;
 	padding-top: 2rem;
 	padding-bottom: 1rem;
@@ -312,7 +340,7 @@ header nav a {
 #thesis .list-item:first-child {
 	margin-top: 2rem;
 	padding-top: 0;
-	background-color: #cbcbcb;
+	background-color: #e0e0e0;
 }
 
 #thesis .list-item:last-child {
@@ -330,7 +358,7 @@ header nav a {
 /*footer styling*/
 
 footer {
-	border-top: 1px solid #cbcbcb;
+	border-top: 1px solid #e0e0e0;
 	display: flex;
 	padding: 1rem 1.5rem 0 1.5rem;
 	justify-content: space-between;
@@ -339,7 +367,11 @@ footer {
 
 footer nav a {
 	text-decoration: none;
-	color: #4a4a49;
+	color: #616161;
+}
+
+footer nav a:hover {
+	color: #388E3C;
 }
 
 footer nav a:first-child {
