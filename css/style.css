@@ -55,6 +55,7 @@ h2 {
 
 }
 
+
 /*header styling*/
 
 header {
@@ -129,6 +130,7 @@ header nav a:hover {
 
 }
 
+
 /*banner section styling*/
 
 #banner {
@@ -190,6 +192,7 @@ header nav a:hover {
 	transition: all 0.2s ease-in;
 }
 
+
 /*banner mobile styling*/
 
 @media only screen and (max-width: 870px) {
@@ -218,6 +221,7 @@ header nav a:hover {
 		max-width: 60%;
 	}
 }
+
 
 /*information section styling*/
 
@@ -321,6 +325,7 @@ header nav a:hover {
 	color: #4CAF50;
 }
 
+
 /*information section mobile styling*/
 
 @media only screen and (max-width: 870px) {
@@ -354,6 +359,7 @@ header nav a:hover {
 	}
 
 }
+
 
 /*course section styling*/
 
@@ -413,6 +419,7 @@ header nav a:hover {
 	width: 75%;
 }
 
+
 /*course section mobile styling*/
 
 @media only screen and (max-width: 870px) {
@@ -426,6 +433,7 @@ header nav a:hover {
 		background-color: #e0e0e0;
 	}
 }
+
 
 /*thesis section styling*/
 
@@ -458,6 +466,7 @@ header nav a:hover {
 	height: auto;
 }
 
+
 /*thesis section mobile styling*/
 @media only screen and (max-width: 870px) {
 	.graphic-content {
@@ -465,6 +474,7 @@ header nav a:hover {
 		margin: 0 0 2rem 0;
 	}
 }
+
 
 /*footer styling*/
 
