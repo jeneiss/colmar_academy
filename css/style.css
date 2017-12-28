@@ -413,6 +413,19 @@ header nav a:hover {
 	width: 75%;
 }
 
+/*course section mobile styling*/
+
+@media only screen and (max-width: 870px) {
+	#course {
+		background-color: #fff;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.course-item {
+		width: 100%;
+		background-color: #e0e0e0;
+	}
+}
 
 /*thesis section styling*/
 
@@ -445,6 +458,13 @@ header nav a:hover {
 	height: auto;
 }
 
+/*thesis section mobile styling*/
+@media only screen and (max-width: 870px) {
+	.graphic-content {
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+}
 
 /*footer styling*/
 
@@ -467,4 +487,13 @@ footer nav a:hover {
 
 footer nav a:first-child {
 	margin-right: 1rem;
+}
+
+/*footer mobile styling*/
+@media only screen and (max-width: 870px) {
+	footer {
+		border-top: none;
+		height: 3rem;
+		justify-content: center;
+	}
 }
