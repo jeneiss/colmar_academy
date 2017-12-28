@@ -12,18 +12,30 @@
 	<header>
 		<div id="header-container">
 			<div id="logo">
-				<div id="logo-img">
+				<div class="header-img">
 					<img src="images/ic-logo.svg" alt="Colmar Academy logo">
 				</div>
 				<div id="logo-text">
-					<p>Colmar<span id="academy">academy</span></p>
+					<p class="desktop-only">Colmar<span id="academy">academy</span></p>
 				</div>
 			</div>
-			<nav>
+			<nav class="desktop-only">
 				<a href="#">On campus</a>
 				<a href="#">Online</a>
 				<a href="#">For companies</a>
 				<a href="#">Sign in</a>
+			</nav>
+
+			<nav id="nav-mobile">
+				<div class="header-img">
+					<a href="#"><img src="images/ic-on-campus.svg" alt="On campus button"></a>
+				</div>
+				<div class="header-img">
+					<a href="#"><img src="images/ic-online.svg" alt="Online button"></a>
+				</div>
+				<div class="header-img">
+					<a href="#"><img src="images/ic-login.svg" alt="Log in button"></a>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -44,7 +56,7 @@
 
 	<!-- information section content -->
 	<section class="graphic-list">
-		<div class="graphic-content">
+		<div class="graphic-content desktop-only">
 			<div class="graphic">
 				<img src="images/information-main.jpg" alt="A student reading a book">
 			</div>
@@ -57,7 +69,8 @@
 		<div class="list">
 			<div class="list-item">
 				<div class="list-image">
-					<img src="images/information-orientation.jpg" alt="Students walking on campus">
+					<img class="desktop-only" src="images/information-orientation.jpg" alt="Students walking on campus">
+					<img class="mobile-only" src="images/information-orientation-mobile.jpg" alt="Students walking on campus">
 				</div>
 				<div class="list-text">
 					<h3>Orientation Date</h3>
@@ -67,7 +80,8 @@
 			</div>
 			<div class="list-item">
 				<div class="list-image">
-					<img src="images/information-campus.jpg" alt="A group of students studying">
+					<img class="desktop-only" src="images/information-campus.jpg" alt="A group of students studying">
+					<img class="mobile-only" src="images/information-campus-mobile.jpg" alt="A group of students studying">
 				</div>
 				<div class="list-text">
 					<h3>Our campus</h3>
@@ -77,7 +91,8 @@
 			</div>
 			<div class="list-item">
 				<div class="list-image">
-					<img src="images/information-guest-lecture.jpg" alt="Oliver Sack">
+					<img class="desktop-only" src="images/information-guest-lecture.jpg" alt="Oliver Sack">
+					<img class="mobile-only"src="images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
 				</div>
 				<div class="list-text">
 					<h3>Our guest lecture</h3>

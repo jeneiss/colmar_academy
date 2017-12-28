@@ -48,6 +48,13 @@ h2 {
 	color: #212121;
 }
 
+@media only screen and (max-width: 870px) {
+	.desktop-only {
+		display: none !important;
+	}
+
+}
+
 /*header styling*/
 
 header {
@@ -77,7 +84,7 @@ header {
 	text-transform: uppercase;
 }
 
-#logo-img img {
+.header-img img {
 	height: 3rem;
 }
 
@@ -90,6 +97,10 @@ header {
 #logo-text span {
 	font-weight: normal;
 	color: #388E3C;
+}
+
+#nav-mobile {
+	display: none;
 }
 
 header nav {
@@ -106,6 +117,17 @@ header nav a:hover {
 	color: #388E3C;
 }
 
+
+/*mobile header styling*/
+
+@media only screen and (max-width: 870px) {
+	#nav-mobile {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+}
 
 /*banner section styling*/
 
@@ -166,6 +188,35 @@ header nav a:hover {
 	background-color: rgb(76,175,80);
 	color: #000;
 	transition: all 0.2s ease-in;
+}
+
+/*banner mobile styling*/
+
+@media only screen and (max-width: 870px) {
+	#banner {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	#banner-graphic {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	#banner-content {
+		width: 90%;
+		align-items: center;
+	}
+
+	#banner-text {
+		text-align: center;
+	}
+
+	#banner-btn {
+		margin-bottom: 2rem;
+		max-width: 60%;
+	}
 }
 
 /*information section styling*/
@@ -242,6 +293,10 @@ header nav a:hover {
 	height: auto;
 }
 
+.list-image img.mobile-only {
+	display: none;
+}
+
 .list-text {
 	width: 65%;
 }
@@ -265,6 +320,42 @@ header nav a:hover {
 .list-link:hover {
 	color: #4CAF50;
 }
+
+/*information section mobile styling*/
+
+@media only screen and (max-width: 870px) {
+	.list {
+		width: 100%;
+	}
+
+	.list-item {
+		width: 95%;
+		flex-direction: column;
+		border: none;
+		margin: 0rem auto 4rem auto;
+	}
+
+	.list-item:last-child {
+		background-color: #fff;
+	}
+
+	.list-image img.mobile-only {
+		display: block;
+	}
+
+	.list-image {
+		width: 100%;
+		padding: 0;
+	}
+
+	.list-text {
+		width: 100%;
+		padding: 1rem 0 0 1rem;
+	}
+
+}
+
+/*course section styling*/
 
 #course {
 	background-color: #e0e0e0;
