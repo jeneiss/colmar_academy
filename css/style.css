@@ -252,9 +252,9 @@ header nav a:hover {
 }
 
 .graphic-text h2 {
- font-size: 2.5rem;
- margin-top: 2rem;
- margin-bottom: 1.5rem;
+	 font-size: 2.5rem;
+	 margin-top: 2rem;
+	 margin-bottom: 1.5rem;
 }
 
 #attribution {
@@ -278,10 +278,10 @@ header nav a:hover {
 }
 
 .list-item {
- display: flex;
- align-items: center;
- margin-left: -1px;
- border-bottom: 1px solid #e0e0e0;
+	 display: flex;
+	 align-items: center;
+	 margin-left: -1px;
+	 border-bottom: 1px solid #e0e0e0;
 }
 
 .list-image {
